@@ -1,0 +1,172 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Logo */
+.logo img {
+  width: 110px;
+  height: auto;
+}
+
+/* Navigation Menu */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 12px 20px;
+  border: 1px solid #dce3ec;
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #334155;
+  background: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  border-color: #7bb7ff;
+  color: #0d6efd;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+
+  background: white;
+
+  min-width: 280px;
+
+  padding: 10px;
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #1f2937;
+}
+
+.dropdown-menu li:hover {
+  background: #f3f7fb;
+  color: #007bff;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Request Quote Button */
+.quote-btn {
+  background: linear-gradient(
+    90deg,
+    #0066ff,
+    #00c6ff
+  );
+
+  color: white;
+  border: none;
+
+  padding: 14px 28px;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0, 132, 255, 0.25);
+
+  transition: 0.3s;
+}
+
+.quote-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Languages */
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 22px;
+  cursor: pointer;
+}
+.language-dropdown {
+  position: relative;
+
+  padding: 12px 18px;
+  border: 1px solid #dce3ec;
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  background: white;
+}
+
+.language-menu {
+  position: absolute;
+  top: 55px;
+  right: 0;
+
+  min-width: 150px;
+
+  background: white;
+
+  border-radius: 12px;
+  padding: 10px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+  z-index: 1000;
+
+  list-style: none;
+}
+
+.language-menu li {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.language-menu li:hover {
+  background: #f3f7fb;
+  color: #007bff;
+}
