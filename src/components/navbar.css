@@ -170,3 +170,7 @@
   background: #f3f7fb;
   color: #007bff;
 }
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
