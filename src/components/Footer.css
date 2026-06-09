@@ -1,0 +1,168 @@
+.footer {
+  background: #020b2d;
+  color: white;
+  padding: 70px 60px 20px;
+  border-top: 3px solid #00b7ff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr 1.5fr;
+  gap: 60px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-column p {
+  color: #d0d8e8;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 14px;
+  color: #d0d8e8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-column ul li:hover {
+  color: #00b7ff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.social-icons svg {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  background: #00b7ff;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.dot {
+  font-size: 7px;
+  margin-top: 8px;
+}
+
+.newsletter-box {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: #151d3b;
+  color: white;
+  padding: 14px;
+  border-radius: 12px 0 0 12px;
+}
+
+.newsletter-box button {
+  border: none;
+  background: #00b7ff;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter small {
+  color: #94a3b8;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #cbd5e1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links span {
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.footer-links span:hover {
+  color: #00b7ff;
+}
+
+.top-btn {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: #00b7ff;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.top-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1200px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
